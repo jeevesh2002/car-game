@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Doodle Car</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="doodlecar.css">
+</head>
+
+<body>
+  <div id="canvasesDiv">
+    <!-- car layer -->
+    <canvas id="gameCanvas1"></canvas>
+    <!-- paint layer -->
+    <canvas id="gameCanvas2"></canvas>
+    <!-- UI layer -->
+    <canvas id="colorPalette" width="500" height="40"></canvas>
+    <div id="currentPaintColor" onclick="showHidePalette()"><i id="brush" class="fa fa-paint-brush" aria-hidden="true"></i></div>
+    <div id="instruction">
+      <div id="gameTitle"><span style="color:#1ABC9C">D</span><span style="color:#2ECC71">O</span><span style="color:#3498DB">O</span><span style="color:#9B59B6">D</span><span style="color:#34495E">L</span><span style="color:#F1C40F">E</span> <span style="color:#E67E22">C</span>
+        <span
+          style="color:#E74C3C">A</span><span style="color:#E81D62">R</span> <i class="fa fa-car" aria-hidden="true"></i></div>
+      <div id="gameSlogan"><em>Drive out your inner imagination</em></div>
+      <div class="moveButton"><i class="fa fa-arrow-up" aria-hidden="true"></i> - Gas pedal</div>
+      <div class="moveButton"><i class="fa fa-arrow-down" aria-hidden="true"></i> - Break</div>
+      <div class="moveButton"><i class="fa fa-arrow-right" aria-hidden="true"></i> - Steer right</div>
+      <div class="moveButton"><i class="fa fa-arrow-left" aria-hidden="true"></i> - Steer left</div>
+      <div><strong><em>spacebar</em></strong> - <strong>HOLD</strong> to spray paint</div>
+      <div><strong><em>backspace</em></strong> - <strong>PRESS</strong> to clear screen</div>
+      <div><strong>CLICK</strong> on color palette to choose color</div>
+      <div><strong>CLICK</strong> on <i class="fa fa-paint-brush" aria-hidden="true"></i>, <i class="fa fa-question-circle" aria-hidden="true"></i> to show/hide color palette, instruction</div>
+    </div>
+    <div id="showHideButton" onclick="showHideInstruction()"><i class="fa fa-question-circle fa-2x" aria-hidden="true"></i></div>
+    <!-- background music -->
+    <!-- <audio src="Spring-Cherry-Blossom-And-You-Epitone-Project.mp3" autoplay loop></audio> -->
+  </div>
+
+
+  <script src="js/GraphicsCommon.js"></script>
+  <script src="js/ImageLoading.js"></script>
+  <script src="js/Car.js"></script>
+  <script src="js/Input.js"></script>
+  <script src="js/Main.js"></script>
+</body>
+
+</html>
+
+</html>
